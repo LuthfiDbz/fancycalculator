@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.container h1 {
+  padding-top: 5%;
+}
+
+.content {
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 20px;
+  display: grid;
+  grid-template-areas: 
+    'screen screen'
+    'numbers operator'
+  ;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.screen {
+  grid-area: screen;
+  height: 60px;
+  border: 1px solid red;
+  font-size: 45px;
+  padding-top: 2%;
+  padding-right: 10px;
+  text-align: right;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.numbers {
+  grid-area: numbers;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.numbers div {
+  border: 1px solid red;
+  width: 80px;
+  height: 45px;
+  padding-top: 10%;
+  font-size: 30px;
+  margin: 10px;
+  margin-left: 0;
+  cursor: pointer;
+  margin-bottom: 0;
+  border-radius: 3px;
+}
+
+.numbers div:nth-child(1) {
+  position: relative;
+  width: 172px;
+  margin-right: -172px;
+  z-index: 1;
+}
+
+.numbers div:nth-child(2) {
+  position: relative;
+  z-index: -1;
+  border: none;
+}
+
+.operator {
+  grid-area: operator;
+  display: grid;
+  margin-left: -10px;
+}
+
+.operator div {
+  border: 1px solid red;
+  width: 80px;
+  height: 45px;
+  padding-top: 10%;
+  font-size: 30px;
+  margin: 10px;
+  margin-right: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  border-radius: 3px;
+}
