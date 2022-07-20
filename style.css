@@ -1,20 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
   text-align: center;
   box-sizing: border-box;
   height: 100vh;
+  background-color: rgb(228, 211, 192);
 }
 
 .container h1 {
-  padding-top: 5%;
+  padding-top: 18vh;
+  margin-bottom: 20px;
 }
 
 .content {
-  border: 1px solid red;
+  background-color: rgb(207, 207, 207);
   border-radius: 6px;
   padding: 20px;
   display: grid;
@@ -26,18 +29,24 @@
   width: fit-content;
   margin: auto;
   box-sizing: border-box;
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
 }
 
 .screen {
   grid-area: screen;
   height: 60px;
-  border: 1px solid red;
+  background-color: rgb(250, 250, 250);
   font-size: 45px;
   padding-top: 2%;
   padding-right: 10px;
   text-align: right;
   margin-bottom: 10px;
   border-radius: 3px;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64) inset;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64) inset;
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64) inset;
 }
 
 .numbers {
@@ -47,7 +56,7 @@
 }
 
 .numbers div {
-  border: 1px solid red;
+  background-color: rgb(247, 247, 247);
   width: 80px;
   height: 45px;
   padding-top: 10%;
@@ -56,10 +65,20 @@
   margin-left: 0;
   cursor: pointer;
   margin-bottom: 0;
-  border-radius: 3px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64);
+}
+
+.numbers div:active {
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64) inset;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64) inset;
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64) inset;
 }
 
 .numbers div:nth-child(1) {
+  background-color: rgb(255, 164, 164);
   position: relative;
   width: 172px;
   margin-right: -172px;
@@ -79,7 +98,7 @@
 }
 
 .operator div {
-  border: 1px solid red;
+  background-color: rgb(255, 212, 162);
   width: 80px;
   height: 45px;
   padding-top: 10%;
@@ -89,4 +108,23 @@
   margin-bottom: 0;
   cursor: pointer;
   border-radius: 3px;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64);
+}
+
+.operator div:active {
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64) inset;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64) inset;
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.64) inset;
+}
+
+.operator .equal {
+  background-color: rgb(250, 133, 0);
+}
+
+@media only screen and (min-width: 768px) {
+  .container h1 {
+    padding-top: 5%;
+  }
 }

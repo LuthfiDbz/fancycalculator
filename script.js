@@ -80,11 +80,11 @@ number.forEach(e => {
     }
 
     // Click conditions
-    if (e.innerText === 'C') {
+    if (e.innerText === 'AC') {
       screen.innerText = 0
     } else if (e.innerText === '+/-') {
       minusNumber();
-    } else if (e.innerText === 'B') {
+    } else if (e.innerText === 'C') {
       deleteNumber();
     } else if(screen.innerText === '0' && e.innerText !== '.') {
       screen.innerText = e.innerText
